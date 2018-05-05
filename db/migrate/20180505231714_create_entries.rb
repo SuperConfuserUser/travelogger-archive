@@ -3,7 +3,7 @@ class CreateEntries < ActiveRecord::Migration[5.2]
     create_table :entries do |t|
       t.string :name
       t.datetime :date
-      t.tetrip :note
+      t.text :note
 
       t.timestamps
     end
