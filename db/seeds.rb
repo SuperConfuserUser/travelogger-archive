@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+trip_categories = ['Business', 'Holiday', 'Activity', 'Other']
+trip_categories.each {|c| TripCategory.create(name: c)}
