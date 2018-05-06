@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :new_user, only [:new, :create]
+  before_action :new_user, only: [:new, :create]
   before_action :set_user, only: [:show, :edit]
   #before_action :user, only: [:new, :create, :show, :edit]
 

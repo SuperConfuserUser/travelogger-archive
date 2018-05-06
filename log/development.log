@@ -719,3 +719,151 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateUsers (20180506195107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180506195107_create_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "about" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180506195107_create_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateLocations (20180505225755)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "locations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180505225755_create_locations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505225755"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (46.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateTrips (20180505231426)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "trips" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "start_date" datetime, "end_date" datetime, "note" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20180505231426_create_trips.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_trips_on_user_id" ON "trips" ("user_id")[0m
+  ↳ db/migrate/20180505231426_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505231426"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (23.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateLegs (20180505231553)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "legs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "location_id" integer, "trip_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_9ce634bf69"
+FOREIGN KEY ("location_id")
+  REFERENCES "locations" ("id")
+, CONSTRAINT "fk_rails_62db1856e6"
+FOREIGN KEY ("trip_id")
+  REFERENCES "trips" ("id")
+)[0m
+  ↳ db/migrate/20180505231553_create_legs.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_legs_on_location_id" ON "legs" ("location_id")[0m
+  ↳ db/migrate/20180505231553_create_legs.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_legs_on_trip_id" ON "legs" ("trip_id")[0m
+  ↳ db/migrate/20180505231553_create_legs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505231553"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (21.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateEntries (20180505231714)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "entries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "date" datetime, "note" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180505231714_create_entries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505231714"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (21.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateTripCategories (20180505232805)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "trip_categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "trip_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_d4189da923"
+FOREIGN KEY ("trip_id")
+  REFERENCES "trips" ("id")
+)[0m
+  ↳ db/migrate/20180505232805_create_trip_categories.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_trip_categories_on_trip_id" ON "trip_categories" ("trip_id")[0m
+  ↳ db/migrate/20180505232805_create_trip_categories.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505232805"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (38.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to AddTripReferencesToEntries (20180505234532)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "entries" ADD "trip_id" integer[0m
+  ↳ db/migrate/20180505234532_add_trip_references_to_entries.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_entries_on_trip_id" ON "entries" ("trip_id")[0m
+  ↳ db/migrate/20180505234532_add_trip_references_to_entries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180505234532"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (32.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to CreateUsers (20180506195107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "about" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180506195107_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180506195107"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (36.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-06 19:59:02.398955"], ["updated_at", "2018-05-06 19:59:02.398955"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (21.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Started GET "/users/" for 192.168.0.18 at 2018-05-06 16:00:29 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 824ms (Views: 809.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 192.168.0.18 at 2018-05-06 16:01:08 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/learn/travelogger/app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :new_user, only [:new, :create]
+                                 ^):
+  
+app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+Started GET "/users/" for 192.168.0.18 at 2018-05-06 16:01:33 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/learn/travelogger/app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :new_user, only [:new, :create]
+                                 ^):
+  
+app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+Started GET "/users/" for 192.168.0.18 at 2018-05-06 16:02:00 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 124ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
