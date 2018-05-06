@@ -1,0 +1,35 @@
+<h2><%= @user.name %>!</h2>
+
+<h2>About</h2>
+<p><%= @user.about %></p>
+
+<!-- different sorting options for trips date asc/dsc  -->
+
+<h2>Trips</h2>
+<%= @user.trips.each do |t| %>
+  <li><%= link_to t.name t %></li>
+<% end %>
+
+<!-- 
+if user == current user
+  add trip 
+  link_to trips/new
+
+  ~>#trips/new
+  name
+  category 
+  start_date
+  end_date
+  note
+  ~ add legs/locations within this form
+
+  go to trip view
+   add entry 
+   link_to entries/new
+
+   ~>#entries/new
+    name
+    date
+    note
+
+-->
