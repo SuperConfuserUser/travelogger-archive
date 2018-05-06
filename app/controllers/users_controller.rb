@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit]
   #before_action :user, only: [:new, :create, :show, :edit]
 
+  # do I want to show a list of users??
   def index
     @users = User.all
   end
