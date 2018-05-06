@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :new_user, only: [:new, :create]
   before_action :set_user, only: [:show, :edit]
   #before_action :user, only: [:new, :create, :show, :edit]
 
@@ -12,12 +11,20 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def edit
   end
 
   def create
+    @user = User.create(user_params)
+    if @user.valid?
+      #session[:user_id] = @user.id
+      redirect_to @user
+    else
+      render :new
+    end
   end
 
   def update
@@ -25,13 +32,9 @@ class UsersController < ApplicationController
 
   private
 
-  def new_user
-    @user = User.new
-  end
-
   def set_user
-   # nice to have: slugifiable instead of id
-   @user = User.find(:id)
+    # nice to have: slugifiable instead of id
+    @user = User.find(params[:id])
   end
 
   # need to test
