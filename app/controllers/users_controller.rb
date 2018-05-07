@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # do I want to show a list of users??
   def index
     @users = User.all
+    @user = User.new
   end
 
   def show
