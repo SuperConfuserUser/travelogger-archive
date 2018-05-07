@@ -14,3 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+
+//=require jquery.min
+//=require jquery-migrate.min
+//=require bootstrap.bundle.min
+//=require easing.min
+//=require wow.min
+//=require hoverIntent
+//=require superfish.min
+//=require magnific-popup.min
+//=require contactoform
+//=require main
