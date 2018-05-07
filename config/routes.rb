@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'sessions#home'
+  get 'static/home'
+
   resources :users
   resources :entries
   resources :trips
