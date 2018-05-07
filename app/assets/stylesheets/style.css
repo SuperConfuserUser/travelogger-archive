@@ -92,6 +92,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.travelogger {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
 }
@@ -124,10 +130,18 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("../theme/img/intro-bg.jpg") center top no-repeat;
+  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.05)), url("../backgrounds/photo-1451186859696-371d9477be93.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
+
+/* #intro {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.00)), url("../backgrounds/photo-1508495761350-6a8bf2a2128a.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+} */
 
 @media (min-width: 1024px) {
   #intro {
@@ -138,9 +152,9 @@ h1, h2, h3, h4, h5, h6 {
 #intro .intro-text {
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 35%;
   right: 0;
-  height: calc(50% - 60px);
+  height: calc(50%x);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,9 +165,9 @@ h1, h2, h3, h4, h5, h6 {
 #intro h2 {
   margin: 30px 0 10px 0;
   padding: 0 15px;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56px;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 112px;
   color: #fff;
 }
 
@@ -181,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .btn-get-started {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -198,54 +212,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-#intro .product-screens {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-}
-
-#intro .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-}
-
-#intro .product-screens .product-screen-1 {
-  position: absolute;
-  z-index: 30;
-  left: calc(50% + 54px);
-  bottom: 0;
-  top: 30px;
-}
-
-#intro .product-screens .product-screen-2 {
-  position: absolute;
-  z-index: 20;
-  left: calc(50% - 154px);
-  bottom: 0;
-  top: 90px;
-}
-
-#intro .product-screens .product-screen-3 {
-  position: absolute;
-  z-index: 10;
-  left: calc(50% - 374px);
-  bottom: 0;
-  top: 150px;
-}
-
-@media (max-width: 767px) {
-  #intro .product-screens .product-screen-1 {
-    position: static;
-    padding-top: 30px;
-  }
-  #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
-    display: none;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -626,7 +592,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #features .title a {
-  color: #111;
+  color: #1110;
 }
 
 #features .description {
@@ -1078,15 +1044,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* Contact Section
+/* Login Section
 --------------------------------*/
-#contact {
+#login {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
   overflow: hidden;
 }
 
-#contact .contact-about h3 {
+#login .contact-about h3 {
   font-size: 36px;
   margin: 0 0 10px 0;
   padding: 0;
@@ -1098,18 +1064,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #1dc8cd;
 }
 
-#contact .contact-about p {
+#login .contact-about p {
   font-size: 14px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   color: #888;
 }
 
-#contact .social-links {
+#login .social-links {
   padding-bottom: 20px;
 }
 
-#contact .social-links a {
+#login .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #fff;
@@ -1125,29 +1091,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #1dc8cd;
 }
 
-#contact .social-links a:hover {
+#login .social-links a:hover {
   background: #1dc8cd;
   color: #fff;
 }
 
-#contact .info {
+#login .info {
   color: #333333;
 }
 
-#contact .info i {
+#login .info i {
   font-size: 32px;
   color: #1dc8cd;
   float: left;
   line-height: 1;
 }
 
-#contact .info p {
+#login .info p {
   padding: 0 0 10px 42px;
   line-height: 28px;
   font-size: 14px;
 }
 
-#contact .form #sendmessage {
+#login .form #sendmessage {
   color: #1dc8cd;
   border: 1px solid #1dc8cd;
   display: none;
@@ -1157,7 +1123,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #errormessage {
+#login .form #errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -1167,11 +1133,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+#login .form #sendmessage.show, #login .form #errormessage.show, #login .form .show {
   display: block;
 }
 
-#contact .form .validation {
+#login .form .validation {
   color: red;
   display: none;
   margin: 0 0 20px;
@@ -1179,13 +1145,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
 }
 
-#contact .form input, #contact .form textarea {
+#login .form input, #login .form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-#contact .form button[type="submit"] {
+#login .form button[type="submit"] {
   background: linear-gradient(45deg, #1de099, #1dc8cd);
   border: 0;
   border-radius: 20px;
@@ -1193,7 +1159,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#contact .form button[type="submit"]:hover {
+#login .form button[type="submit"]:hover {
   cursor: pointer;
 }
 

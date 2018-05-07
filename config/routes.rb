@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'sessions#home'
+  root 'static#home'
   get 'static/home'
 
   resources :users
