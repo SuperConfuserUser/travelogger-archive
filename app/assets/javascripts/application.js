@@ -25,5 +25,5 @@
 //=require hoverIntent
 //=require superfish.min
 //=require magnific-popup.min
-//=require contactoform
+//=require contactform
 //=require main
