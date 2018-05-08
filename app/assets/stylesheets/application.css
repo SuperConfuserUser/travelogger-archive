@@ -14,10 +14,5 @@
  *= require_self
  */
 
-*= require bootstrap.min
-*= require animate.min
-*= require font-awesome.min
-*= require ionicons.min
-*= require magnific-popup
 *= require style
-
+*= require_self
