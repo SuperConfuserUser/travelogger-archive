@@ -14,5 +14,7 @@
  *= require_self
  */
 
+
 *= require style
-*= require_self
+*= require_self 
+
