@@ -54889,3 +54889,905 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 6711ms (Views: 6676.2ms | ActiveRecord: 1.1ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to AddEmailToUsers (20180509052122)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar[0m
+  ↳ db/migrate/20180509052122_add_email_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180509052122"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (95.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:27:58 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 4825ms (Views: 4781.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:28:14 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 296ms (Views: 293.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:28:37 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (12.4ms)
+Completed 200 OK in 367ms (Views: 364.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:28:41 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header (0.6ms)
+  Rendered layouts/_footer (1.7ms)
+Completed 200 OK in 262ms (Views: 257.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:28:45 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 253ms (Views: 249.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:28:51 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header (0.6ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 309ms (Views: 301.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:30:26 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header (0.9ms)
+  Rendered layouts/_footer (1.2ms)
+Completed 200 OK in 336ms (Views: 331.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:31:58 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 322ms (Views: 318.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 01:34:39 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 298ms (Views: 292.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Migrating to ChangeNameColumnToUsers (20180509055053)
+  [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "username" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "about" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT NULL)[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "ausers" ("id","username","password_digest","about","created_at","updated_at","email")
+                     SELECT "id","name","password_digest","about","created_at","updated_at","email" FROM "users"[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (19.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "username" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "about" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT NULL)[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "users" ("id","username","password_digest","about","created_at","updated_at","email")
+                     SELECT "id","username","password_digest","about","created_at","updated_at","email" FROM "ausers"[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  ↳ db/migrate/20180509055053_change_name_column_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180509055053"]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/bin/rake:23
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 01:55:19 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (96.9ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x0a8ab40c>):
+    1: <%= form_for @user do |f| %>
+    2:   Name: <%= f.text_field :name %><br>
+    3:   Password: <%= f.password_field :password %><br>
+    4:   Password Confirmation: <%= f.password_field :password_confirmation %><br>
+    5:   <%= f.submit %>
+  
+app/views/users/new.html.erb:2:in `block in _app_views_users_new_html_erb__807501912_89676670'
+app/views/users/new.html.erb:1:in `_app_views_users_new_html_erb__807501912_89676670'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 01:55:33 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (378.0ms)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0ab0aa90>:0x0b188318>):
+    17:   <p>test</p>
+    18: 
+    19: <div class="form-group row">
+    20:   <%= f.label :username %>
+    21:   <%= f.text_field :username %>
+    22: 
+    23: </div>
+  
+app/views/users/new.html.erb:20:in `_app_views_users_new_html_erb__807501912_93079180'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 01:56:43 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (85.7ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 807ms (Views: 801.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 01:58:08 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 199ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:00:59 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 221ms (Views: 214.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:05:24 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 207ms (Views: 204.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.0) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.0) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 192.168.0.18 at 2018-05-09 02:05:41 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header (0.7ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 403ms (Views: 400.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:07:23 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (111.3ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:39: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...append=( f.submit, "Register" );@output_buffer.safe_append='
+...                               ^
+/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:45: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/users/new.html.erb:39: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/users/new.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/new.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:07:35 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_header (0.7ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 205ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:10:34 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (72.9ms)
+  Rendered layouts/_header (0.7ms)
+  Rendered layouts/_footer (0.7ms)
+Completed 200 OK in 309ms (Views: 305.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:11:06 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 199ms (Views: 193.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:12:09 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 221ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:12:54 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (2.3ms)
+Completed 200 OK in 212ms (Views: 206.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:13:00 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header (0.3ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 190ms (Views: 186.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:15:20 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 230ms (Views: 227.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:16:09 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+....label :password_confirmation "Password",  class: "col-sm-2 ...
+...                               ^
+/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:43: syntax error, unexpected ',', expecting ')'
+...ssword_confirmation "Password",  class: "col-sm-2 col-form-l...
+...                               ^):
+  
+app/views/users/new.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/users/new.html.erb:43: syntax error, unexpected ',', expecting ')'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:16:18 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 189ms (Views: 186.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:16:30 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.3ms)
+Completed 200 OK in 215ms (Views: 211.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:18:00 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 221ms (Views: 219.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:19:13 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 201ms (Views: 194.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:20:02 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/learn/Development/Code/travelogger/app/views/users/new.html.erb:24: syntax error, unexpected ','
+...email, class: "form-control", , placeholder: "Your Email" );...
+...                               ^):
+  
+app/views/users/new.html.erb:24: syntax error, unexpected ','
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:20:15 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.7ms)
+Completed 200 OK in 191ms (Views: 186.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:21:11 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header (0.7ms)
+  Rendered layouts/_footer (0.9ms)
+Completed 200 OK in 212ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:21:48 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_header (0.3ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 186ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:22:05 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 169ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:23:17 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header (0.3ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 206ms (Views: 201.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:23:34 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header (0.3ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 321ms (Views: 315.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:23:35 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 201ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:23:48 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 209ms (Views: 203.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:24:37 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.3ms)
+Completed 200 OK in 214ms (Views: 211.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:24:44 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 184ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:25:52 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.8ms)
+Completed 200 OK in 237ms (Views: 234.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.18 at 2018-05-09 02:25:53 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 272ms (Views: 250.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:27:34 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (5.2ms)
+Completed 200 OK in 259ms (Views: 251.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:27:40 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 216ms (Views: 213.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:27:57 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 179ms (Views: 177.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:28:09 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 198ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:30:16 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 221ms (Views: 217.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:30:53 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 241ms (Views: 235.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:31:08 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.7ms)
+Completed 200 OK in 263ms (Views: 258.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:31:11 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 263ms (Views: 258.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:31:31 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.7ms)
+Completed 200 OK in 219ms (Views: 216.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:31:34 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (52.8ms)
+  Rendered layouts/_header (0.8ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 347ms (Views: 300.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:31:43 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_header (0.6ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 212ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:32:44 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 194ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:33:07 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 183ms (Views: 181.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:33:17 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 189ms (Views: 184.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:34:11 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header (0.3ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 189ms (Views: 185.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:34:40 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.3ms)
+Completed 200 OK in 240ms (Views: 234.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:36:14 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header (2.0ms)
+  Rendered layouts/_footer (0.3ms)
+Completed 200 OK in 211ms (Views: 208.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:37:57 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header (4.0ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 185ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:45:25 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (19.5ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 238ms (Views: 234.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:45:29 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header (0.5ms)
+  Rendered layouts/_footer (1.0ms)
+Completed 200 OK in 218ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:45:35 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header (0.6ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 210ms (Views: 208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:46:21 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 219ms (Views: 214.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:46:25 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header (0.7ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 287ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:46:56 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `boo' for #<User:0x09a8a968>):
+     7:     <div class="form-group row">
+     8:       <%= f.label :boo, class: "col-sm-2 col-form-label" %>
+     9:       <div class="col-sm-10">
+    10:         <%= f.text_field :boo, class: "form-control", placeholder: "Your Username" %>
+    11:       </div>
+    12:     </div>
+    13: 
+  
+app/views/users/new.html.erb:10:in `block in _app_views_users_new_html_erb__807501912_80927110'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__807501912_80927110'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:47:32 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `boo' for #<User:0xb33c72e8>):
+     7:     <div class="form-group row">
+     8:       <%= f.label :boo, class: "col-sm-2 col-form-label" %>
+     9:       <div class="col-sm-10">
+    10:         <%= f.text_field :boo, class: "form-control", placeholder: "Your Username" %>
+    11:       </div>
+    12:     </div>
+    13: 
+  
+app/views/users/new.html.erb:10:in `block in _app_views_users_new_html_erb__807501912__643943358'
+app/views/users/new.html.erb:6:in `_app_views_users_new_html_erb__807501912__643943358'
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:47:38 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 206ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:47:40 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 277ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:48:06 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header (1.9ms)
+  Rendered layouts/_footer (0.8ms)
+Completed 200 OK in 253ms (Views: 245.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:48:14 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header (0.6ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 224ms (Views: 220.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:48:35 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header (1.1ms)
+  Rendered layouts/_footer (0.6ms)
+Completed 200 OK in 187ms (Views: 182.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:49:04 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 207ms (Views: 200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:49:25 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.4ms)
+Completed 200 OK in 218ms (Views: 212.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.0.18 at 2018-05-09 02:50:02 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.5ms)
+Completed 200 OK in 208ms (Views: 206.0ms | ActiveRecord: 0.0ms)
+
+

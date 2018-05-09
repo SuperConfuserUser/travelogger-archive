@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   # do I want to show a list of users??
   def index
     @users = User.all
-    @user = User.new
   end
 
   def show
@@ -38,12 +37,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  # need to test
-  def user
-    @user = User.find(:id) || User.new
-  end
-
   def user_params
-    params.require(:user).permit(:name, :password, :password_confirmation, :about)
+    params.require(:user).permit(:username, :password, :password_confirmation, :email, :about)
   end
 end
