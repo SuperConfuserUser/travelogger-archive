@@ -54877,3 +54877,15 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 241ms (Views: 203.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/new" for 192.168.0.18 at 2018-05-08 21:34:18 -0400
+Cannot render console from 192.168.0.18! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/learn/.rvm/gems/ruby-2.3.6/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_header (0.4ms)
+  Rendered layouts/_footer (0.3ms)
+Completed 200 OK in 6711ms (Views: 6676.2ms | ActiveRecord: 1.1ms)
+
+
