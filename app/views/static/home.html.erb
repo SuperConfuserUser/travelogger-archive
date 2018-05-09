@@ -5,7 +5,7 @@
 
   <div class="intro-text">
       <h2 class="travelogger">Travelogger</h2>
-    <a href="#about" class="btn-get-started scrollto">Go Forth</a>
+    <a href="#login" class="btn-get-started scrollto">Go Forth</a>
   </div>
 
 </section><!-- #intro -->
@@ -19,41 +19,50 @@
         <div class="row wow fadeInUp">
 
           <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>About</h3>
+            <div>
+              <h3 class="title-colored">Register</h3>
               <p>You've been places. Keep track of your adventures with this travelogue.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
             </div>
+
+            <div class="text-centered"><a class="btn" href="/users/new">Register</a></div>
+
+            
           </div>
 
-          <div class="col-lg-3 col-md-4">
-        
-          </div>
 
-          <div class="col-lg-5 col-md-8">
+          <div class="col-lg-5 col-md-4">
+            <h3 class="title-colored">Log in</h3>
+
+            <div>
+              <a href="" class="btn"><span class="fa fa-facebook"></span> Log in with Facebook</a>
+            </div>
+
+            <br>
+            <h4 class="text-center text-middle-line">
+              <span>or</span>
+            </h4>
+
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Username" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <label for="name">Username</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Password" data-rule="email" data-msg="Please enter a valid email" />
+                    <label for"password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                   </div>
                 </div>
-                <div class="text-center"><button type="submit" title="Login">Login</button></div>
+                <div class=""><button type="submit" title="Login">Log in</button></div>
               </form>
             </div>
+
+
           </div>
 
         </div>
